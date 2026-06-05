@@ -1,0 +1,23 @@
+🎯 Problème de l'entreprise
+L'entreprise fait face à une variabilité de ses ventes et souhaite améliorer sa rentabilité globale. Elle a besoin d'identifier précisément les produits qui génèrent de la valeur, ceux qui sont neutres et ceux qui font perdre de l'argent afin d'ajuster sa stratégie commerciale, d'optimiser son catalogue et de réduire ses coûts.
+
+⚙️ Pipeline de Données (ETL & BI)
+🐍 1. Extraction et Chargement (Mini ETL - Python)
+Extraction : Récupération des données brutes de vente.
+
+Transformation : Nettoyage léger et ajustement des types de colonnes pour garantir la qualité et l'intégrité des données.
+
+Chargement : Intégration des données propres et structurées dans la base de données PostgreSQL.
+
+🗄️ 2. Modélisation et Structuration (SQL)
+Analyse Exploratoire (EDA) : Étude préliminaire pour comprendre le comportement des différents indicateurs.
+
+Modélisation : Création d'un schéma en étoile (Star Schema) séparant la table de faits et les tables de dimensions (Clients, Produits, Lieux, Dates).
+La table de faits ne contiendra que les mesures et les IDs vers les tables de dimensions.
+
+Optimisation : Structuration et création de requêtes SQL optimisées pour la performance des calculs.
+
+📊 3. Restitution et Analyse (Power BI)
+Mesures DAX : Création des indicateurs financiers et métier (Chiffre d'affaires, Coûts, Bénéfices, Marges), création des colonnes calculées
+
+Visualisation interactive : Structuration du tableau de bord en 3 pages (Vue globale, Analyse des produits à forte valeur, Audit des pertes) pour faciliter la prise de décision.
